@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: RateToGif API
+
+client:
+  openExchangeRates:
+    baseUrl: ${OPEN_EXCHANGE_RATES_BASE_URL:https://openexchangerates.org/api}
+    appId: ${OPEN_EXCHANGE_RATES_APP_ID:b96a08ac38bc4910b9d3de2c71764859}
+    base: ${OPEN_EXCHANGE_RATES_BASE:RUB}
+  giphy:
+     baseUrl: ${GIPHY_BASE_URL:https://api.giphy.com/v1}
+     apiKey: ${GIPHY_APIKEY:brGQqlRAgW2GH0KfKRycU5WcUraHGnkA}
+     rateUpQuery: ${GIPHY_RATE_UP_QUERY:rich}
+     rateDownQuery: ${GIPHY_RATE_DOWN_QUERY:broke}
+     maxRandomOffset: ${GIPHY_MAX_RANDOM_OFFSET:100}
+     imageUrlFormat: ${GIPHY_IMAGE_URL_FORMAT:https://i.giphy.com/media/%/giphy.gif}
